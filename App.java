@@ -2,12 +2,24 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class App {
-
-public static void main (String []   args) {
+	
+	public static void main (String []   args) {
 		String[] words = {"Banana", "Apple", "Orange", "Mango","Peach","Plum", "Strawberries", "Kiwi","Cherry"}; //Guessed Words
 		String word = words [(int) (Math.random() * words.length)];
+		String random = new string(new char[word.length()]).replace("\0", "*");
+		int count = 0;
+		
+		Scanner sc = new scanner(System.in);
+		
+		while (count < 7 && random contains ("*")) {
 		System.out.println("Welcome, Lets Play Hangman!");
 		System.out.println("Guess A Letter!");
+		System.out.println (random);
+		String guess = sc.next();
+		hang (guess);
+		
+		}
+		sc.close();
 		//User types in a letter
 		
 		//Check if letter exists within the word
@@ -18,6 +30,6 @@ public static void main (String []   args) {
 		
 		
 	
-    
-    }
+
+  }
 }
