@@ -32,6 +32,20 @@ public class App {
 					randomtwo += "*"
 			}
 		}
+
+    if (random.equals(randomtwo)) {
+			count++;
+			hmimage();
+		} else {
+				random = randomtwo
+		}
+		if (random.equals(word)) {
+				System.out.println ("You've won! The word was" + word);
+			
+			}
+		
+		}
+		
 			
 		//User types in a letter
 		
