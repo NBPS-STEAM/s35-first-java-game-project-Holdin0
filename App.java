@@ -20,6 +20,19 @@ public class App {
 		
 		}
 		sc.close();
+
+    Public static void hang(String guess) {
+		String randomtwo = "";
+		for (int i=0; i < word.length (); i++) {
+			if (word.charAt(i) == guess.charAt(0) {
+				randomtwo += guess.charAt(0);
+			} else if (random.charAt (i) != '*' {
+					randomtwo += word.charAt (i);
+			} else {
+					randomtwo += "*"
+			}
+		}
+			
 		//User types in a letter
 		
 		//Check if letter exists within the word
